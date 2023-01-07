@@ -1,7 +1,13 @@
 let num = 10;
-if(num%2==0){
-    console.log("Prime")
+let count=0;
+for(let i=1;i<=num;i++) {
+    if(num%i==0){
+    count++
+    }
 }
-else{
-    console.log("Not Prime")
+if(count==2) {
+    console.log("prime number")
+}
+else {
+    console.log("not a prime number")
 }
